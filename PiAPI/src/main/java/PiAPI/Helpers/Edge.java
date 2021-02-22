@@ -1,5 +1,8 @@
 package PiAPI.Helpers;
 
+/**
+ * Provides edge values
+ */
 public class Edge {
     private static String edgeRising = "rising";
     private static String edgeFalling = "falling";

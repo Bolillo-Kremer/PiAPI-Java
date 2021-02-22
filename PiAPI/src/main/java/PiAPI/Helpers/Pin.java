@@ -1,5 +1,8 @@
 package PiAPI.Helpers;
 
+/**
+ * Provides pin and pin state values
+ */
 public class Pin {
     private static String pinOut = "out";
     private static String pinIn = "in";

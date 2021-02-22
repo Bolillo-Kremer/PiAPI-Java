@@ -8,7 +8,6 @@ import java.net.URL;
 import com.google.gson.Gson;
 
 /**
- * <h1>Utilities</h1>
  * Utilities for Pi such as
  * <ul>
  * <li>HTTP GET response</li>

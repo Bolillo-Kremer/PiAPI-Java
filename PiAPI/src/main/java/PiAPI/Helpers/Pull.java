@@ -1,5 +1,8 @@
 package PiAPI.Helpers;
 
+/**
+ * Provides pull values
+ */
 public class Pull {
     private static String pullUp = "up";
     private static String pullDown = "down";

@@ -4,17 +4,19 @@ import com.google.gson.JsonObject;
 import PiAPI.Helpers.Pin;
 
 /**
- * <h1>PiAPI</h1>
  * Allows for
  * <ul>
  * <li>GPIO pin control</li>
  * <li>Executing commands on Pi terminal</li>
  * <li>Configuring PiAPI settings</li>
+ * </ul>
  */
 public class Pi {
-    protected String urlOverride = "";
-    protected String ipAddress = "";
-    protected long port;
+
+    private String urlOverride = "";
+    private String ipAddress = "";
+    private long port;
+    private long defaultAPIPort = 5000;
     private RuntimeException noUrl = new RuntimeException("API url not provided");
 
     /**
@@ -304,7 +306,7 @@ public class Pi {
     /**
      * Sets the port that PiAPI runs on
      * @param port The new port value
-     * @return
+     * @return API response
      */
     public String setAPIPort(long port) {
         return setAPISetting("port", port);
@@ -324,5 +326,13 @@ public class Pi {
             piUrl = urlOverride;
         }
         return piUrl;
+    }
+
+    /**
+     * Gets the default port of PiAPI
+     * @return PiAPI's deafult port
+     */
+    public long defaultPort() {
+        return defaultAPIPort;
     }
 }
