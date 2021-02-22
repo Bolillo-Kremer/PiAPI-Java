@@ -19,7 +19,7 @@ After downloading and adding a reference to this library in your project, you wi
 import PiAPI.*;
 ```
 ```java
-static public void Main(String[] args) 
+static public void main(String[] args) 
 { 
     String ipAddress = "192.168.1.100";
     long port = Pi.DefaultPort; //(Default port = 5000)
@@ -30,6 +30,9 @@ static public void Main(String[] args)
     //You need to specify which pins will be set as input or output
     myPi.initPin(2, "in");
     myPi.initPin(3, "out");
+    
+    //Unexports all pins on the Pi
+    myPi.cleanExit();
 }
 ```
 
@@ -112,12 +115,14 @@ import PiAPI.*;
 import PiAPI.Helpers.*;
 ```
 ```java
-Pi myPi = new Pi("192.168.1.100", Pi.defaultPort());
+public static void main(String[] args) {
+    Pi myPi = new Pi("192.168.1.100", Pi.defaultPort());
 
-myPi.initPin(2, Pin.in(), Edge.rising());
-myPi.setState(2, Pin.high());
+    myPi.initPin(2, Pin.in(), Edge.rising());
+    myPi.setState(2, Pin.high());
 
-myPi.cleanExit();
+    myPi.cleanExit();
+}
 ```
 
 For updates on this project and other other entertainging coding projects, please subscribe to my YouTube channel, [Bolillo Kremer](https://youtube.com/BolilloKremer?https://www.youtube.com/BolilloKremer?sub_confirmation=1). 
