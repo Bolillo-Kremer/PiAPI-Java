@@ -12,7 +12,7 @@ For updates on this project and other other entertainging coding projects, pleas
 This library requires that [PiAPI](https://github.com/Bolillo-Kremer/PiAPI) is running on your raspberry pi. You can install it on your pi with just one command! To see instructions, [click here](https://github.com/Bolillo-Kremer/PiAPI/blob/master/README.md).
 
 ### Initializing
-You can download the latest .jar library by clicking [here](https://github.com/Bolillo-Kremer/PiAPI-Java/blob/master/PiAPI-latest.jar?raw=true)
+You can download the latest .jar library by clicking [here](https://github.com/Bolillo-Kremer/PiAPI-Java/blob/master/PiAPI-latest.jar?raw=true).
 After downloading and adding a reference to this library in your project, you will need to setup you PiAPI connection like this.
 
 ```java
