@@ -74,10 +74,10 @@ Additionaliy, you can access the raw url of PiAPI by calling Utilities.RawUrl.
 ##### Example
 ```java
 //Posts "Some Content" to PiAPI
-String POSTResponse = Utilities.post(MyPi.RawUrl + "/SomePost", "Some content");
+String POSTResponse = Utilities.post(myPi.getRawUrl() + "/SomePost", "Some content");
 
 //Gets Response from PiAPI
-String GETResponse = Utilities.get(MyPi.RawUrl + "/SomeGet");
+String GETResponse = Utilities.get(myPi.getRawUrl() + "/SomeGet");
 ```
 
 ### API Settings
