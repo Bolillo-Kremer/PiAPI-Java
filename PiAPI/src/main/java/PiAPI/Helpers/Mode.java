@@ -4,8 +4,8 @@ package PiAPI.Helpers;
  * Gets Board Mode values
  */
 public class Mode {
-    private String bcmMode = "bcm";
-    private String boardMode = "board";
+    private static String bcmMode = "bcm";
+    private static String boardMode = "board";
 
     /**
      * @return BCM value
