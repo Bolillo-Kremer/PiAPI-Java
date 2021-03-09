@@ -6,7 +6,7 @@
 
   <groupId>com.github.bolillo-kremer</groupId>
   <artifactId>PiAPI</artifactId>
-  <version>1.0.0.1</version>
+  <version>1.0</version>
 
   <name>PiAPI</name>
   <url>https://github.com/Bolillo-Kremer/PiAPI-Java</url>
